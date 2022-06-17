@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{D713FD0F-8BD6-4C34-A800-0BDCAF08DBAC}" SchemaVersion="103">
+	<GameParameters>
+		<WorkUnit Name="Default Work Unit" ID="{D713FD0F-8BD6-4C34-A800-0BDCAF08DBAC}" PersistMode="Standalone">
+			<ChildrenList>
+				<Folder Name="Audio Busses" ID="{932D6D58-3000-4437-83A8-DBA6B46F1B00}" ShortID="866541354">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="10"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<GameParameter Name="MasterBus_RTPC" ID="{039F3A75-FF51-4739-9103-0F16825F000A}">
+							<PropertyList>
+								<Property Name="InitialValue" Type="Real64" Value="1"/>
+								<Property Name="Max" Type="Real64" Value="1"/>
+							</PropertyList>
+						</GameParameter>
+						<GameParameter Name="MusicBus_RTPC" ID="{A5922BF5-813C-4894-8620-5A8771613130}">
+							<PropertyList>
+								<Property Name="InitialValue" Type="Real64" Value="1"/>
+								<Property Name="Max" Type="Real64" Value="1"/>
+							</PropertyList>
+						</GameParameter>
+						<GameParameter Name="SFXBus_RTPC" ID="{C7095B27-C007-4EB6-9808-085FA06B9991}">
+							<PropertyList>
+								<Property Name="InitialValue" Type="Real64" Value="1"/>
+								<Property Name="Max" Type="Real64" Value="1"/>
+							</PropertyList>
+						</GameParameter>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Wordl" ID="{6798EA20-E0C5-4B6E-A52F-D88EC8CF645E}" ShortID="707066700">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="4"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<GameParameter Name="Wordls_Reverb" ID="{F5C01A5F-B9E0-4968-890F-65DD8CC3ED0E}">
+							<PropertyList>
+								<Property Name="BindToBuiltInParam" Type="int16" Value="1"/>
+								<Property Name="InitialValue" Type="Real64" Value="0"/>
+								<Property Name="Max" Type="Real64" Value="8"/>
+							</PropertyList>
+						</GameParameter>
+						<GameParameter Name="Missile_Loop" ID="{81EA6E3B-94A3-4AB6-9164-E571B6F805C4}">
+							<PropertyList>
+								<Property Name="BindToBuiltInParam" Type="int16" Value="1"/>
+								<Property Name="InitialValue" Type="Real64" Value="0"/>
+								<Property Name="Max" Type="Real64" Value="8"/>
+							</PropertyList>
+						</GameParameter>
+					</ChildrenList>
+				</Folder>
+			</ChildrenList>
+		</WorkUnit>
+	</GameParameters>
+</WwiseDocument>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{15E48C73-275E-433C-9B43-BFCDF01D1996}" SchemaVersion="103">
+	<AudioDevices>
+		<WorkUnit Name="Default Work Unit" ID="{15E48C73-275E-433C-9B43-BFCDF01D1996}" PersistMode="Standalone">
+			<ChildrenList>
+				<AudioDevice Name="System" ID="{D6659B67-4615-4061-AD87-BF59875A7F55}" PluginName="System" CompanyID="0" PluginID="174" PluginType="7">
+					<PropertyList>
+						<Property Name="AllowSystemAudioObjects" Type="bool">
+							<ValueList>
+								<Value>False</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList/>
+				</AudioDevice>
+				<AudioDevice Name="No_Output" ID="{C766E1DF-A068-42AC-87A9-52ABF78AD2A4}" PluginName="No Output" CompanyID="0" PluginID="181" PluginType="7"/>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioDevices>
+</WwiseDocument>

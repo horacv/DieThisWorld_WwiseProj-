@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{F905C7A7-DD62-420A-B1AB-14A1E407084B}" SchemaVersion="103">
+	<Busses>
+		<WorkUnit Name="Default Work Unit" ID="{F905C7A7-DD62-420A-B1AB-14A1E407084B}" PersistMode="Standalone">
+			<ChildrenList>
+				<Bus Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}">
+					<PropertyList>
+						<Property Name="BusVolume" Type="Real64">
+							<RTPCList>
+								<RTPC Name="" ID="{14BA075F-F855-481C-866B-442D87D24AFE}" ShortID="903952610">
+									<ReferenceList>
+										<Reference Name="ControlInput">
+											<ObjectRef Name="MasterBus_RTPC" ID="{039F3A75-FF51-4739-9103-0F16825F000A}" WorkUnitID="{D713FD0F-8BD6-4C34-A800-0BDCAF08DBAC}"/>
+										</Reference>
+									</ReferenceList>
+									<Curve Name="" ID="{15134BE0-AF91-4BE7-8B4A-D2AA6D0AFF03}">
+										<PropertyList>
+											<Property Name="Flags" Type="int32" Value="3"/>
+										</PropertyList>
+										<PointList>
+											<Point>
+												<XPos>0</XPos>
+												<YPos>-200</YPos>
+												<Flags>5</Flags>
+												<SegmentShape>Log1</SegmentShape>
+											</Point>
+											<Point>
+												<XPos>1</XPos>
+												<YPos>0</YPos>
+												<Flags>37</Flags>
+											</Point>
+										</PointList>
+									</Curve>
+								</RTPC>
+							</RTPCList>
+						</Property>
+						<Property Name="Color" Type="int16" Value="10"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="AudioDevice">
+							<ObjectRef Name="System" ID="{D6659B67-4615-4061-AD87-BF59875A7F55}" WorkUnitID="{15E48C73-275E-433C-9B43-BFCDF01D1996}"/>
+						</Reference>
+						<Reference Name="Effect2" PluginName="Wwise Gain" CompanyID="0" PluginID="139" PluginType="3">
+							<ObjectRef Name="Master_PreGrain" ID="{37A315FB-7068-4E3D-A283-D6F54C58511B}" WorkUnitID="{01742BF6-99B4-4EB0-A02E-926AE8C85440}"/>
+						</Reference>
+						<Reference Name="Effect3" PluginName="Wwise Peak Limiter" CompanyID="0" PluginID="110" PluginType="3">
+							<ObjectRef Name="Brick_Wall_Minus_1dB_Peak_Fast_Release" ID="{2144284E-7ADD-4341-86A4-4E468BEC9A2D}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Bus Name="Music Bus (Stereo)" ID="{9F086898-DE22-405E-AEDE-B25C2CEDDD2C}">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="1"/>
+								<Property Name="OutputBusVolume" Type="Real64">
+									<RTPCList>
+										<RTPC Name="" ID="{627F5181-6CFE-410B-A577-F9A2CA056E28}" ShortID="363921069">
+											<ReferenceList>
+												<Reference Name="ControlInput">
+													<ObjectRef Name="MusicBus_RTPC" ID="{A5922BF5-813C-4894-8620-5A8771613130}" WorkUnitID="{D713FD0F-8BD6-4C34-A800-0BDCAF08DBAC}"/>
+												</Reference>
+											</ReferenceList>
+											<Curve Name="" ID="{7D965636-E32B-4F6E-9EB1-4A00630F35AF}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="3"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>0</XPos>
+														<YPos>-200</YPos>
+														<Flags>5</Flags>
+														<SegmentShape>Log1</SegmentShape>
+													</Point>
+													<Point>
+														<XPos>1</XPos>
+														<YPos>0</YPos>
+														<Flags>37</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</RTPC>
+									</RTPCList>
+								</Property>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-10</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ObjectLists/>
+						</Bus>
+						<Bus Name="SFX Bus (Stereo)" ID="{7706236D-24CC-4123-ACAF-699201144DFD}">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="4"/>
+								<Property Name="OutputBusVolume" Type="Real64">
+									<RTPCList>
+										<RTPC Name="" ID="{84A808C8-35E5-4F9D-AFA8-30EDDB174EE5}" ShortID="638327331">
+											<ReferenceList>
+												<Reference Name="ControlInput">
+													<ObjectRef Name="SFXBus_RTPC" ID="{C7095B27-C007-4EB6-9808-085FA06B9991}" WorkUnitID="{D713FD0F-8BD6-4C34-A800-0BDCAF08DBAC}"/>
+												</Reference>
+											</ReferenceList>
+											<Curve Name="" ID="{640E5EBB-0C27-41F8-9036-46B2BB82F73C}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="3"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>0</XPos>
+														<YPos>-200</YPos>
+														<Flags>5</Flags>
+														<SegmentShape>Log1</SegmentShape>
+													</Point>
+													<Point>
+														<XPos>1</XPos>
+														<YPos>0</YPos>
+														<Flags>37</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</RTPC>
+									</RTPCList>
+								</Property>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
+							<ChildrenList>
+								<Bus Name="World (Ambi 3rd)" ID="{136AAA94-5721-4168-B291-67B220CD8AB3}">
+									<PropertyList>
+										<Property Name="BusChannelConfig" Type="int32">
+											<ValueList>
+												<Value>528</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Effect0">
+											<Custom>
+												<Effect Name="Resonance Audio Renderer (Custom)" ID="{F3DCFF85-40F8-4258-B89E-007185B3A407}" ShortID="220434479" PluginName="Resonance Audio Renderer" CompanyID="272" PluginID="100" PluginType="3"/>
+											</Custom>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AuxBus Name="World_Reverb" ID="{2D5CFF01-ECD3-4E30-AE65-CC40E1D42CFC}">
+											<ReferenceList>
+												<Reference Name="Effect0" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+													<ObjectRef Name="Have_U_Ever_Been_Outside" ID="{FE29AE8D-FD86-4652-A95D-68D32F5760EC}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+												</Reference>
+											</ReferenceList>
+											<ObjectLists/>
+										</AuxBus>
+										<Bus Name="Ambiance (Ambi 1st)" ID="{54FA2F98-936F-4856-BA86-4D8CC3BAFE15}">
+											<PropertyList>
+												<Property Name="BusChannelConfig" Type="int32">
+													<ValueList>
+														<Value>516</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ObjectLists/>
+										</Bus>
+									</ChildrenList>
+									<ObjectLists/>
+								</Bus>
+								<Bus Name="UI (Stereo)" ID="{D1057697-E0F5-465C-93DD-AE80D1AA9DAF}">
+									<ObjectLists/>
+								</Bus>
+							</ChildrenList>
+							<ObjectLists/>
+						</Bus>
+					</ChildrenList>
+					<ObjectLists/>
+				</Bus>
+			</ChildrenList>
+		</WorkUnit>
+	</Busses>
+</WwiseDocument>

@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{C3B6D67F-363D-4631-B4D6-61993A689E24}" SchemaVersion="103">
+	<Events>
+		<WorkUnit Name="Default Work Unit" ID="{C3B6D67F-363D-4631-B4D6-61993A689E24}" PersistMode="Standalone">
+			<ChildrenList>
+				<Folder Name="Music Events" ID="{571C1625-8289-4F17-8398-5433DF928BDF}" ShortID="810857055">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="1"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<Event Name="Play_Music" ID="{5016F9B4-21DF-490A-B8D1-EBF81DB07DF8}">
+							<ChildrenList>
+								<Action Name="" ID="{334CA4DD-9BDE-4A76-A1AB-69E8DA2E259E}" ShortID="1016002575">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Music" ID="{10227A26-D5DC-49E5-AEE4-22184BF207E4}" WorkUnitID="{49441293-6FB0-4BEA-AC33-037E7A238CFF}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="SFX Events" ID="{B27A04C5-F9C7-46CD-B8EF-332E607D4AE1}" ShortID="188079457">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="19"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<Folder Name="NPC Events" ID="{26011924-8C9D-4FD2-BFB2-C769EA4C2B00}" ShortID="335017880">
+							<ChildrenList>
+								<Folder Name="Attacks" ID="{E5E4BBD8-D46A-48F0-B05E-71002BBD07B5}" ShortID="91372323">
+									<ChildrenList>
+										<Event Name="Play_ProjectileFire" ID="{8EB148D5-BE76-4500-8622-0ECC8B426449}">
+											<ChildrenList>
+												<Action Name="" ID="{E0846BAF-FDEE-479C-A435-238A6F67F3AC}" ShortID="280594779">
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="Projectile_Fire" ID="{E843945D-D108-444D-B30D-EBDE7799067E}" WorkUnitID="{B42D77CD-2C64-42F3-865C-2E576A7B0CEE}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+										<Event Name="Play_ProjectileExplosion" ID="{5E6FC80C-8B8F-4D1E-A486-0BD80AAEE45D}">
+											<ChildrenList>
+												<Action Name="" ID="{58FBDD48-2376-47F9-9774-F074B548152C}" ShortID="473051474">
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="Projectile_Explosion" ID="{F4E11D3E-79C2-43DC-8CB2-D5E3348F48E3}" WorkUnitID="{B42D77CD-2C64-42F3-865C-2E576A7B0CEE}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+										<Event Name="Play_ProjectileLoop" ID="{AF54C0BF-0D7D-4AAB-81A7-3447C05C4552}">
+											<ChildrenList>
+												<Action Name="" ID="{1146A6E2-DDAB-4EFB-879D-20C030D7E76D}" ShortID="443162260">
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="Projectile_Loop" ID="{CA5AACB9-5CF7-4500-A848-83E0FDB714E3}" WorkUnitID="{B42D77CD-2C64-42F3-865C-2E576A7B0CEE}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+										<Event Name="Play_LaserTurret_Loop" ID="{5228AE18-4F8D-4066-9D9F-D9D4FACF867C}">
+											<ChildrenList>
+												<Action Name="" ID="{0EBDF178-57EC-4496-98D4-42BF113CD1F1}" ShortID="655044635">
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="LaserTurret_Loop" ID="{6D17916A-3098-4F59-B6C0-E1DB50327BDA}" WorkUnitID="{B42D77CD-2C64-42F3-865C-2E576A7B0CEE}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+										<Event Name="Play_LaserDamage_Loop" ID="{9B4D9419-A68B-4968-8262-7CFDD8F5A9F9}">
+											<ChildrenList>
+												<Action Name="" ID="{D2057FC5-81AF-48CF-AEC6-54DC778A33CF}" ShortID="54605503">
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="LaserDamage_Loop" ID="{6D75C157-9045-4802-B02A-78F6352F0762}" WorkUnitID="{B42D77CD-2C64-42F3-865C-2E576A7B0CEE}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+										<Event Name="Play_DroneProjectileFire" ID="{50F9E29C-5A87-4927-94CD-A716B74B92E0}">
+											<ChildrenList>
+												<Action Name="" ID="{B77CB147-E19C-4977-848B-DFCE25874C0C}" ShortID="886256010">
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="DroneProjectile_Fire" ID="{2780426F-EB23-4777-A982-3887AD09CBD9}" WorkUnitID="{B42D77CD-2C64-42F3-865C-2E576A7B0CEE}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+										<Event Name="Play_DroneProjectileHit" ID="{875C62B2-6573-43C6-B667-C92333F52CA9}">
+											<ChildrenList>
+												<Action Name="" ID="{94ADCF32-9C2D-4899-98FC-1F415A43B745}" ShortID="367100184">
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="DroneProjectile_Hit" ID="{117FECF5-293A-4A05-B16D-A8FDE54E2BA3}" WorkUnitID="{B42D77CD-2C64-42F3-865C-2E576A7B0CEE}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+									</ChildrenList>
+								</Folder>
+							</ChildrenList>
+						</Folder>
+						<Folder Name="Player Events" ID="{E13BB76F-47D3-4FC8-841F-F7BC6AF0D969}" ShortID="478342052">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="23"/>
+							</PropertyList>
+							<ChildrenList>
+								<Event Name="Play_PlayerIdle" ID="{7E6BB9DE-D028-4E97-8189-C73EAE6D8E6B}">
+									<ChildrenList>
+										<Action Name="" ID="{785D5B56-0EEF-4C02-9025-5C6365C48DA1}" ShortID="527651549">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Player_IdleSound" ID="{5185DE39-62CE-4D5C-A961-09FCFC00EB6B}" WorkUnitID="{B42D77CD-2C64-42F3-865C-2E576A7B0CEE}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Play_PlayerAttack_1" ID="{C8CDF5D1-BEC4-4550-A9EB-03C59C6FBE44}">
+									<ChildrenList>
+										<Action Name="" ID="{AC2E0235-0051-4095-8374-40E7F6DBFBFE}" ShortID="441664876">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Player_Attack1" ID="{18C810D8-6E36-459F-B903-1AC19DACBDA8}" WorkUnitID="{B42D77CD-2C64-42F3-865C-2E576A7B0CEE}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Play_PlayerAttack_2" ID="{03C61875-7458-4E8B-8E07-2BBD1412D1C6}">
+									<ChildrenList>
+										<Action Name="" ID="{EFFA66FF-47FE-415B-9B2E-110EF8DA24FC}" ShortID="804482560">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Player_Attack2" ID="{207960A0-4D6E-4D3A-BEC1-BA72F159A904}" WorkUnitID="{B42D77CD-2C64-42F3-865C-2E576A7B0CEE}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Play_LaserAttack" ID="{853E8542-F9BF-40C1-8443-E0DE517C5A93}">
+									<ChildrenList>
+										<Action Name="" ID="{A82BEFFB-B846-4368-BA1D-A70A1BF70BEB}" ShortID="981013541">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Player_Attack3" ID="{374C9CEC-8681-4461-9EC6-12E2AB32609B}" WorkUnitID="{B42D77CD-2C64-42F3-865C-2E576A7B0CEE}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
+						<Folder Name="Ambiance" ID="{276F306E-0008-4024-8E23-19B83313C63E}" ShortID="892731089">
+							<ChildrenList>
+								<Event Name="Play_CityAmb" ID="{712C3750-69D0-45B4-8E45-1E3494280E75}">
+									<ChildrenList>
+										<Action Name="" ID="{27282831-F2F9-498A-827B-52CC28FA3047}" ShortID="427226187">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="City" ID="{8F696A14-4ED8-4FC3-9D85-E92B229758AA}" WorkUnitID="{B42D77CD-2C64-42F3-865C-2E576A7B0CEE}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Play_GameplaySiren" ID="{0E91E575-FC6C-4014-99CE-FA3EEF47EBC0}">
+									<ChildrenList>
+										<Action Name="" ID="{909843D0-EEDD-4881-AD4D-2024DF7ACE19}" ShortID="681943018">
+											<PropertyList>
+												<Property Name="Delay" Type="Real64" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Sirens_Extra" ID="{E2E4BEBD-7B20-41FB-A1C7-DA3992A09E74}" WorkUnitID="{B42D77CD-2C64-42F3-865C-2E576A7B0CEE}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
+						<Folder Name="UI" ID="{163C4EB1-6BE2-4875-BA04-4A3BCDC56742}" ShortID="187065012">
+							<ChildrenList>
+								<Event Name="Play_ButtonClick" ID="{4FF00143-D0F1-49E1-93D2-0D8F53239E8D}">
+									<ChildrenList>
+										<Action Name="" ID="{135D96A9-7374-40C8-87B4-A909CEE84E25}" ShortID="397843840">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="ButtonClick" ID="{29E0A2F0-2FD5-4CF0-9448-B82E04447A75}" WorkUnitID="{B42D77CD-2C64-42F3-865C-2E576A7B0CEE}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Play_ButtonHover" ID="{279DA5C8-B6F5-47EA-A0D8-6FB0B9FEDEDA}">
+									<ChildrenList>
+										<Action Name="" ID="{A06AACE7-1A9A-4486-B29D-444D447F7B26}" ShortID="106144756">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="ButtonHover" ID="{6C5CFC0B-8F5D-4699-BCB4-9B84423F5204}" WorkUnitID="{B42D77CD-2C64-42F3-865C-2E576A7B0CEE}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
+						<Folder Name="Wortd" ID="{34DC91E0-99A9-46A0-8140-7B9A266740C4}" ShortID="411335846">
+							<ChildrenList>
+								<Event Name="Play_BuildingExplosion" ID="{99CDCA28-120C-40FA-B8EC-7EB13525DFF8}">
+									<ChildrenList>
+										<Action Name="" ID="{209C6757-3686-45FB-BC11-175D99222FE7}" ShortID="7257587">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="DestroyExplosion" ID="{ED329307-EE58-4A29-ABC2-77AF813517BC}" WorkUnitID="{B42D77CD-2C64-42F3-865C-2E576A7B0CEE}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
+					</ChildrenList>
+				</Folder>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

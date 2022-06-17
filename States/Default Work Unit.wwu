@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{5E9748D4-BB4A-4467-9A91-E5B5D3D12301}" SchemaVersion="103">
+	<States>
+		<WorkUnit Name="Default Work Unit" ID="{5E9748D4-BB4A-4467-9A91-E5B5D3D12301}" PersistMode="Standalone">
+			<ChildrenList>
+				<StateGroup Name="Gameplay_State" ID="{DE86DB52-AE49-4131-BE6E-41EDFDAE43AD}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="21"/>
+						<Property Name="DefaultTransitionTime" Type="Real64" Value="0"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<State Name="None" ID="{84237BBC-2F36-49A0-8B7A-8A728D21E57C}"/>
+						<State Name="Menu" ID="{AA5A00D2-4E76-4B71-8493-57D8E94721D3}"/>
+						<State Name="Gameplay" ID="{D39EF330-15C2-478A-958A-FFAACD2B24C1}"/>
+						<State Name="Ending" ID="{94D6CA19-CA51-4C47-9A8B-A363CF09E0D7}"/>
+					</ChildrenList>
+					<TransitionList>
+						<Transition>
+							<StartState Name="Gameplay" ID="{D39EF330-15C2-478A-958A-FFAACD2B24C1}"/>
+							<EndState Name="Menu" ID="{AA5A00D2-4E76-4B71-8493-57D8E94721D3}"/>
+							<Time>0</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+						<Transition>
+							<StartState Name="Menu" ID="{AA5A00D2-4E76-4B71-8493-57D8E94721D3}"/>
+							<EndState Name="Gameplay" ID="{D39EF330-15C2-478A-958A-FFAACD2B24C1}"/>
+							<Time>3</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+						<Transition>
+							<StartState Name="Ending" ID="{94D6CA19-CA51-4C47-9A8B-A363CF09E0D7}"/>
+							<EndState Name="Gameplay" ID="{D39EF330-15C2-478A-958A-FFAACD2B24C1}"/>
+							<Time>3</Time>
+							<IsShared>true</IsShared>
+						</Transition>
+					</TransitionList>
+				</StateGroup>
+				<StateGroup Name="Level" ID="{04B0B330-CF73-450A-98BF-AEF074D522AE}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="21"/>
+						<Property Name="DefaultTransitionTime" Type="Real64" Value="0"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<State Name="None" ID="{57F2CE09-7DD6-448B-8570-ED66B923518F}"/>
+						<State Name="Level1" ID="{55CCCA3B-768E-4D9D-AD39-5DBF2B459455}"/>
+					</ChildrenList>
+				</StateGroup>
+			</ChildrenList>
+		</WorkUnit>
+	</States>
+</WwiseDocument>
